@@ -129,22 +129,24 @@ footer {
   left: 0;
   background-color: hsl(0deg 0% 16%);
   position: fixed;
+  z-index: 1000;
 }
 .nav-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
   
+  
 }
-.left-bottom img {
+/* .left-bottom img {
   width: 50px;
   height: 50px;
   position: absolute;
   top: 50%;
   left: 50px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
 
-}
+}*/
 .left-bottom{
     display: flex;
     flex-direction: row;
@@ -152,6 +154,7 @@ footer {
     align-items: center;
     flex-wrap: nowrap;
     text-align: center;
+    
     
 }
 
