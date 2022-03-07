@@ -31,9 +31,9 @@ body {
 
   display: flex;
 }
+/* aside */
 aside {
   height: 100%;
-
   width: 250px;
   background-color: hsl(0deg 0% 0%);
   z-index: 100;
@@ -42,6 +42,10 @@ aside {
   width: 125px;
   margin: 20px;
 }
+.flex-column{
+    display: flex;
+}
+/* HOME SEARCH LIBRARY  */
 ul li {
   list-style-type: none;
   display: flex;
@@ -54,7 +58,8 @@ ul li {
 }
 .menu ul li p {
   margin-left: 5px;
-}
+} 
+/* PLAYLIST */
 .playlist {
   margin-top: 20px;
   margin-left: 20px;
@@ -71,18 +76,21 @@ ul li {
   color: black;
   margin-right: 10px;
 }
+
+/* DOWNLOAD ACCOUNT */
+.aside-footer {
+  margin: 20px;
+  padding: 10px;
+  vertical-align: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 .fa-arrow-down {
   border: 1px solid hsl(0deg 0% 35%);
   border-radius: 50%;
   width: 20px;
   height: 20px;
-}
-.nav-footer {
-  margin: 20px;
-  padding: 10px;
-  vertical-align: bottom;
-  bottom: 0;
-  left: 0;
 }
 .download {
   display: flex;
@@ -94,10 +102,11 @@ ul li {
   color: white;
 }
 
+/*  main */
 main {
   width: calc(100% - 250px);
   background-color: hsl(219deg 26% 11%);
-}
+}/* nav top */
 .nav-top {
   background-color: rgba(0, 0, 0, 0.3);
   top: 0;
@@ -114,6 +123,7 @@ main {
   color: white;
   cursor: pointer;
 }
+/* /nav top END */
 
 .content {
   padding-top: 90px;
@@ -121,43 +131,111 @@ main {
   height: 100%;
   overflow-y: auto;
 }
-
+/* nav bottom */
 footer {
   height: 90px;
   width: 100%;
-  bottom: 0;
-  left: 0;
+  /* bottom: 0;
+  left: 0; */
   background-color: hsl(0deg 0% 16%);
   position: fixed;
   z-index: 1000;
-}
-.nav-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  
 }
-/* .left-bottom img {
+/* nav bottom  left */
+ .left-bottom img {
   width: 50px;
   height: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50px;
-  transform: translate(-50%, -50%); 
+  margin: 10px;
 
-}*/
+}
 .left-bottom{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
-    text-align: center;
-    
-    
+  
+}
+.like-n-save{
+    margin-left: 40px;
+}
+.like-n-save i{
+    margin-left: 10px;
+}
+/* nav bottom  center*/
+.center-bottom {
+    width: 30%;}
+
+    .music-options{
+        display: flex;
+        justify-content: center;
+    }
+    .music-options i{
+        margin: 10px;
+        font-size: 25px;
+        color: white;
+
+    }
+.music{
+
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  
 }
 
+
+
+
+
+
+
+
+
+
+
+/* nav bottom  right*/
+.right-bottom {
+    display: flex;
+}
+.right-bottom div{
+    margin: 10px;
+;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.aside-footer h3:hover{
+
+    color: green;
+    cursor: pointer;
+}
+.download:hover{
+
+    color: green;
+    cursor: pointer;
+}
+i:hover{
+
+    color: green;
+    cursor: pointer;
+}
 ul li:hover {
   color: white;
   cursor: pointer;

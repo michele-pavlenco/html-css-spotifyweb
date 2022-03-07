@@ -19,8 +19,9 @@
             <aside>
 
                 <img src="./img/logo.svg" alt="logo" class="logo">
-                <div class="menu">
-                    <ul class="debug">
+                <div class="flex-column">
+                <div class="menu debug">
+                    <ul >
                         <li> <i class="fa-solid fa-house"></i>
                             <p> Home</p>
                         </li>
@@ -32,7 +33,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="playlist ">
+                <div class="playlist debug ">
                     <h3>Playlist</h3>
                     <ul>
                         <li><i class="fa-solid fa-plus flex-center"></i>
@@ -62,7 +63,7 @@
                     </ul>
 
                 </div>
-                <div class="nav-footer">
+                <div class="aside-footer debug">
                     <div class="download">
                         <i class="fa-solid fa-arrow-down flex-center"></i></i>
                         <p>Installa app</p>
@@ -71,7 +72,7 @@
                         <h3><i class="fa-solid fa-circle-user"></i>John Doe</h3>
                     </div>
                 </div>
-
+            </div>
 
 
 
@@ -154,18 +155,59 @@
             </main>
         </div>
         <footer>
-            <nav class="nav-bottom">
-                <div class=" left-bottom">
-                    <!-- <img src="./img/sinister.jpeg" alt=""> -->
+            <div class=" left-bottom ">
+                <img src="./img/sinister.jpeg" alt="played-song">
+                <div>
                     <h5>Siniste</h5>
-                    
+                    <p>Brano Nome</p>
                 </div>
-<div>fiidfidvidhv</div>
+                <div class="like-n-save">
+                    <i>&#9825;</i>
+                    <i class="fa-solid fa-folder"></i>
+                </div>
+
+            </div>
+            <div class="center-bottom">
+                <div class=" music-options">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <input class="music" type="range" id="music" name="music" min="0" max="100">
+            </div>
 
 
 
-            </nav>
-        </footer>
+
+
+
+            <div class="right-bottom ">
+                <div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-bars"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-volume-high"></i> <input type="range" id="vol" name="vol" min="0" max="10">
+                </div>
+               
+
+                   
+              
+
+            </div>
+
+
+
+    </div>
+
+
+
+    </nav>
+    </footer>
     </div>
 </body>
 
