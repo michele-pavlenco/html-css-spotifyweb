@@ -1,123 +1,161 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Fredoka ;
-    font-weight: 700;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Fredoka;
+  font-weight: 700;
 }
-.debug{
-    border: 1px solid white;
+.debug {
+  border: 1px solid white;
 }
-.flex-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-body{
-    background-color: black;
-    color: hsl(0deg 0% 35%);
+.flex-reverse {
+  display: flex;
+  justify-content: flex-end;
 }
-.wrapper{
-    height: 100vh;
-    width: 100%;
+body {
+  background-color: black;
+  color: hsl(0deg 0% 35%);
 }
-.wrapper-content{
-    width: 100%;
-    height: calc(100% - 90px);
-    
-    display: flex;
+.wrapper {
+  height: 100vh;
+  width: 100%;
 }
-aside{
-    width: 250px;
-    background-color: hsl(0deg 0% 0%) ;
-    z-index: 100;
+.wrapper-content {
+  width: 100%;
+  height: calc(100% - 90px);
 
+  display: flex;
 }
-.logo{
-    width: 125px;
-    margin: 20px; 
-   
+aside {
+  height: 100%;
+
+  width: 250px;
+  background-color: hsl(0deg 0% 0%);
+  z-index: 100;
 }
-ul li{
-    list-style-type: none;
-    display: flex;
+.logo {
+  width: 125px;
+  margin: 20px;
+}
+ul li {
+  list-style-type: none;
+  display: flex;
 }
 .menu ul li {
-    font-size: 17px;
-    padding: 5px;
-    margin-left: 20px;
-    height: auto;
+  font-size: 17px;
+  padding: 5px;
+  margin-left: 20px;
+  height: auto;
+}
+.menu ul li p {
+  margin-left: 5px;
+}
+.playlist {
+  margin-top: 20px;
+  margin-left: 20px;
+  line-height: 4ex;
+  height: 300px;
+}
+.playlist h3 {
+  color: white;
+}
+.fa-plus {
+  width: 30px;
+  height: 30px;
+  background-color: hsl(0deg 0% 64%);
+  color: black;
+  margin-right: 10px;
+}
+.fa-arrow-down {
+  border: 1px solid hsl(0deg 0% 35%);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.nav-footer {
+  margin: 20px;
+  padding: 10px;
+  vertical-align: bottom;
+  bottom: 0;
+  left: 0;
+}
+.download {
+  display: flex;
+}
+.profile {
+  margin-top: 10px;
+  border-top: 1px solid hsl(0deg 0% 35%);
+  padding-top: 20px;
+  color: white;
+}
+
+main {
+  width: calc(100% - 250px);
+  background-color: hsl(219deg 26% 11%);
+}
+.nav-top {
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 90px;
+  position: fixed;
+}
+.nav-top p {
+  margin: 30px;
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 10px 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.content {
+  padding-top: 90px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+footer {
+  height: 90px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(0deg 0% 16%);
+  position: fixed;
+}
+.nav-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.left-bottom img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translate(-50%, -50%);
 
 }
-.menu ul li p{
-    margin-left: 5px;
-}
-.playlist{
-    margin-top: 20px;
-    margin-left:20px;
-    line-height: 4ex;
-    height: 300px;
+.left-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
     
 }
-.playlist h3{
-    color: white;
-}
-.fa-plus{
-    width: 30px;
-    height: 30px;
-    background-color:hsl(0deg 0% 64%) ;
-    color: black;
-    margin-right: 10px;
-}
-.fa-arrow-down{
-    border: 1px solid hsl(0deg 0% 35%);
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    text-align: center;
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-main{
-    width: calc(100% - 250px);
-    background-color:hsl(219deg 26% 11%) ;
-}
-.nav-top{
-    background-color: rgba(0, 0, 0, 0.3);
-    top: 0%;
-    right: 0;
-    width: 100%;
-    height: 90px;
-    position: fixed;
-}
-.content{
-    padding-top:  90px; 
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-}
-
-footer{
-    height: 90px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    background-color: hsl(0deg 0% 16%);
-    position: fixed;
-}
-ul li:hover{
-    color: white;
-    cursor: pointer;
+ul li:hover {
+  color: white;
+  cursor: pointer;
 }
