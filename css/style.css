@@ -36,19 +36,25 @@ aside {
   height: 100%;
   width: 250px;
   background-color: hsl(0deg 0% 0%);
-
+  min-height: 0px;
 }
 .logo {
   width: 125px;
   margin: 20px;
 }
-.flex-column{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-}
 /* HOME SEARCH LIBRARY  */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.menu {
+  margin-left: 20px;
+  height: 120px;
+  z-index: 1000;
+  background-color: black;
+}
 ul li {
   list-style-type: none;
   display: flex;
@@ -56,13 +62,15 @@ ul li {
 .menu ul li {
   font-size: 17px;
   padding: 5px;
-  margin-left: 20px;
   height: 40px;
-  
 }
 .menu ul li p {
   margin-left: 5px;
-} 
+}
+.menu-img {
+  width: 25px;
+  height: 25px;
+}
 /* PLAYLIST */
 .playlist {
   margin-top: 20px;
@@ -85,11 +93,11 @@ ul li {
 .aside-footer {
   margin: 20px;
   padding: 10px;
-  vertical-align: bottom;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: auto;
+  position: fixed;
+  bottom: 80px;
+  left: 0%;
+  width: 220px;
+  background-color: black;
 }
 .fa-arrow-down {
   border: 1px solid hsl(0deg 0% 35%);
@@ -102,7 +110,7 @@ ul li {
 }
 .profile {
   margin-top: 10px;
-  border-top: 1px solid hsl(0deg 0% 35%);
+  border-top: 2px solid hsl(0deg 0% 35%);
   padding-top: 20px;
   color: white;
 }
@@ -111,7 +119,7 @@ ul li {
 main {
   width: calc(100% - 250px);
   background-color: hsl(219deg 26% 11%);
-}/* nav top */
+} /* nav top */
 .nav-top {
   background-color: rgba(0, 0, 0, 0.3);
   top: 0;
@@ -129,13 +137,76 @@ main {
   cursor: pointer;
 }
 /* /nav top END */
+section{
+  margin: 20px;
+}
+section h2{
+  color: white;
+  margin-bottom: 10px;
+
+}
+
+
+
+
 
 .content {
   padding-top: 90px;
   width: 100%;
   height: 100%;
   overflow-y: auto;
+  
+ } 
+.explore{
+  width: 100%;
+
 }
+.content ul{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}
+
+.content ul li {
+margin:10px ;
+text-transform: uppercase;
+  
+}
+.row{
+  display: flex;
+  flex-flow: row wrap;
+
+}
+.content-img img{
+
+  width: 100%;
+  padding: 5px;
+  
+
+
+}
+
+.content-img{
+  width: calc(100% / 6);
+  
+  text-align: center;
+}
+.content-img h3{
+  color: white;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* nav bottom */
 footer {
   height: 90px;
@@ -150,69 +221,54 @@ footer {
   align-items: center;
 }
 /* nav bottom  left */
- .left-bottom img {
+.left-bottom img {
   width: 50px;
   height: 50px;
   margin: 10px;
-
 }
-.left-bottom{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: nowrap;
-  
+.left-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
 }
-.like-n-save{
-    margin-left: 40px;
+.like-n-save {
+  margin-left: 40px;
 }
-.like-n-save i{
-    margin-left: 10px;
+.like-n-save i {
+  margin-left: 10px;
 }
 /* nav bottom  center*/
 .center-bottom {
-    width: 30%;}
+  width: 30%;
+}
 
-    .music-options{
-        display: flex;
-        justify-content: center;
-    }
-    .music-options i{
-        margin: 10px;
-        font-size: 25px;
-        color: white;
-
-    }
-.music{
-
+.music-options {
+  display: flex;
+  justify-content: center;
+}
+.music-options i {
+  margin: 10px;
+  font-size: 25px;
+  color: white;
+}
+.music {
   width: 100%;
   height: 5px;
   border-radius: 5px;
   cursor: pointer;
   opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-  
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* nav bottom  right*/
 .right-bottom {
-    display: flex;
+  display: flex;
 }
-.right-bottom div{
-    margin: 10px;
-;
+.right-bottom div {
+  margin: 10px;
 }
 
 
@@ -222,24 +278,17 @@ footer {
 
 
 
-
-
-
-
-.aside-footer h3:hover{
-
-    color: green;
-    cursor: pointer;
+.aside-footer h3:hover {
+  color: green;
+  cursor: pointer;
 }
-.download:hover{
-
-    color: green;
-    cursor: pointer;
+.download:hover {
+  color: green;
+  cursor: pointer;
 }
-i:hover{
-
-    color: green;
-    cursor: pointer;
+i:hover {
+  color: green;
+  cursor: pointer;
 }
 ul li:hover {
   color: white;
