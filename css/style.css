@@ -20,6 +20,7 @@
 body {
   background-color: black;
   color: hsl(0deg 0% 35%);
+  min-width: 550px;
 }
 .wrapper {
   height: 100vh;
@@ -33,7 +34,7 @@ body {
 }
 /* aside */
 aside {
-  height: 100%;
+  height: 100vh;
   width: 250px;
   background-color: hsl(0deg 0% 0%);
 }
@@ -46,7 +47,9 @@ aside {
 .flex-column {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
+  justify-content:last baseline;
+  
 }
 
 .menu {
@@ -59,6 +62,7 @@ aside {
 ul li {
   list-style-type: none;
   display: flex;
+  width: 200px;
 }
 .menu ul li {
   font-size: 17px;
@@ -103,11 +107,10 @@ ul li {
 
 /* DOWNLOAD ACCOUNT */
 .aside-footer {
+  
   margin: 20px;
-  padding: 10px;
-  position: relative;
-  bottom: -80px;
-  left: 0%;
+  bottom: 0px;
+  left: 40px;
   width: 220px;
   background-color: black;
 }
@@ -170,21 +173,15 @@ section h2 {
   width: 100%;
   height: 80px;
 }
-
-/* .content ul li:hover{
-  border-bottom: 2px solid  green;
-
-} */
-
 .content ul li:hover .underline {
   display: block;
 }
 .content ul {
   display: flex;
   justify-content: center;
-  align-items: center;
+
   flex-wrap: wrap;
-  height: 20px;
+  height: 40px;
 }
 
 .content ul li {
@@ -194,9 +191,8 @@ section h2 {
   flex-direction: column;
   align-items: center;
   width: 120px;
-  
-  
 }
+
 .content ul li .underline {
   width: 35px;
   height: 3px;
@@ -224,13 +220,15 @@ section h2 {
   display: none;
   position: absolute;
   font-size: 50px;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .content-img img:hover + i {
-  color: green;
+  color: white;
   display: block;
+  cursor: pointer;
+  position: absolute;
 }
 .content-img h3 {
   color: white;
