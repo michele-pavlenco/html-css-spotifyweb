@@ -38,17 +38,21 @@ aside {
   width: 250px;
   background-color: hsl(0deg 0% 0%);
 }
-.logo {
+.logo-big {
   width: 125px;
   margin: 20px;
   z-index: 2000;
+}
+.logo-small{
+  display: none;
 }
 /* HOME SEARCH LIBRARY  */
 .flex-column {
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-end; */
-  justify-content:last baseline;
+  height:calc(100% - 175px) ;
+   justify-content: space-between; 
+  
   
 }
 
@@ -84,12 +88,13 @@ ul li {
   margin-top: 20px;
   margin-left: 20px;
   line-height: 4ex;
-  height: 300px;
+  height: 265px;
   overflow-y: auto;
 }
 .playlist h3 {
   color: white;
 }
+
 .fa-plus {
   width: 30px;
   height: 30px;
@@ -107,10 +112,8 @@ ul li {
 
 /* DOWNLOAD ACCOUNT */
 .aside-footer {
-  
-  margin: 20px;
-  bottom: 0px;
-  left: 40px;
+  margin-left: 20px;
+  /* margin: 20px; */
   width: 220px;
   background-color: black;
 }
@@ -128,6 +131,8 @@ ul li {
   border-top: 2px solid hsl(0deg 0% 35%);
   padding-top: 20px;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 /*  main */
@@ -205,18 +210,24 @@ section h2 {
   display: flex;
   flex-flow: row wrap;
 }
+
+
+.play-content{
+
+  position: relative;
+}
+
 .content-img img {
   width: 100%;
   padding: 5px;
 }
-
 .content-img {
   width: calc(100% / 6);
   text-align: center;
-  position: relative;
+  
 }
 
-.content-img i {
+.play-content i {
   display: none;
   position: absolute;
   font-size: 50px;
@@ -271,13 +282,13 @@ footer {
 }
 /* nav bottom  center*/
 .center-bottom {
-  width: 30%;
+  width: 40%;
 }
 
 .music-options {
   display: flex;
   justify-content: center;
-  height: 50px;
+  height: 40px;
 }
 .music-options i {
   margin: 10px;
@@ -295,13 +306,9 @@ footer {
 }
 .music {
   width: 100%;
-  height: 4px;
+  height: 5px;
   border-radius: 10px;
   cursor: pointer;
-  opacity: 0.7;
-
-  transition: opacity 1s;
-  background: green;
 }
 
 /* nav bottom  right*/
