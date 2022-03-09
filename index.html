@@ -43,25 +43,25 @@
                             <li><i class="fa-solid fa-plus flex-center"></i>
                                 <p>Crea Playlist</p>
                             </li>
-                            <li>
+                            <li class="playlist-hover">
                                 <p>Nome Playlist</p>
                             </li>
-                            <li>
+                            <li class="playlist-hover">
                                 <p>Nome Playlist</p>
                             </li>
-                            <li>
+                            <li class="playlist-hover">
                                 <p>Nome Playlist</p>
                             </li>
-                            <li>
+                            <li class="playlist-hover">
                                 <p>Nome Playlist</p>
                             </li>
-                            <li>
+                            <li class="playlist-hover">
                                 <p>Nome Playlist</p>
                             </li>
-                            <li>
+                            <li class="playlist-hover">
                                 <p>Nome Playlist</p>
                             </li>
-                            <li>
+                            <li class="playlist-hover">
                                 <p>Nome Playlist</p>
                             </li>
                         </ul>
@@ -94,12 +94,30 @@
                 <div class="content">
                     <div class="explore">
                         <ul>
-                            <li>In Evidenza</li>
-                            <li>Podcast</li>
-                            <li>Classifiche </li>
-                            <li>Generi e Mood</li>
-                            <li>Nuove Uscite</li>
-                            <li> Scopri </li>
+                            <li>In Evidenza
+                                <div class="underline">
+                                </div>
+                            </li>
+                            <li>Podcast
+                                <div class="underline">
+                                </div>
+                            </li>
+                            <li>Classifiche
+                                <div class="underline">
+                                </div>
+                            </li>
+                            <li>Generi e Mood
+                                <div class="underline">
+                                </div>
+                            </li>
+                            <li>Nuove Uscite
+                                <div class="underline">
+                                </div>
+                            </li>
+                            <li> Scopri
+                                <div class="underline">
+                                </div>
+                            </li>
                         </ul>
                     </div>
 
@@ -109,33 +127,42 @@
                             <div class="content-img">
 
                                 <img src="./img/metal_lifting.jpg" alt="">
+                                <i class="fa-solid fa-circle-play"></i>
                                 <h3>Heavy Metal</h3>
                                 <p>Subtitle</p>
 
                             </div>
 
                             <div class="content-img">
-                                <img src="./img/stranger.jpeg" alt="">
+                                <div class="play-content">
+                                    <img src="./img/stranger.jpeg" alt="">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                </div>
                                 <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                                 <p>Subtitle</p>
                             </div>
                             <div class="content-img">
                                 <img src="./img/aquietplace.jpeg" alt="">
+                                <i class="fa-solid fa-circle-play"></i>
                                 <h3>A quiet place</h3>
                                 <p>Subtitle</p>
                             </div>
                             <div class="content-img">
                                 <img src="./img/split.jpeg" alt="">
+                                <i class="fa-solid fa-circle-play"></i>
+
                                 <h3>Split</h3>
                                 <p>Subtitle</p>
                             </div>
                             <div class="content-img">
                                 <img src="./img/cure.jpeg" alt="">
+                                <i class="fa-solid fa-circle-play"></i>
                                 <h3>A cure for wellness</h3>
                                 <p>Subtitle</p>
                             </div>
                             <div class="content-img">
                                 <img src="./img/sinister.jpeg" alt="">
+                                <i class="fa-solid fa-circle-play"></i>
                                 <h3>Sinister</h3>
                                 <p>Subtitle</p>
                             </div>
@@ -146,18 +173,20 @@
                         <p>Pi&uacute; ascolti, pi&uacute; accurati saranno i suggerimenti </p>
                         <div class="row">
                             <div class="content-img">
-                                <i class="fas fa-play"></i>
+                                <i class="fa-solid fa-circle-play"></i>
 
                                 <img src="./img/radar.jpeg" alt="">
+                                <i class="fa-solid fa-circle-play"></i>
                                 <h3>Relase Radar</h3>
-                               
+
 
                             </div>
 
                             <div class="content-img">
                                 <img src="./img/mixdaily.jpeg" alt="">
+                                <i class="fa-solid fa-circle-play"></i>
                                 <h3>Daily Mix 1</h3>
-                                
+
                             </div>
 
                         </div>
@@ -168,16 +197,19 @@
                         <div class="row">
                             <div class="content-img">
 
+
                                 <img src="./img/youg.jpeg" alt="">
+                                <i class="fa-solid fa-circle-play"></i>
                                 <h3>Lana del Ray</h3>
-                               
+
 
                             </div>
 
                             <div class="content-img">
                                 <img src="./img/einaudi.jpeg" alt="">
+                                <i class="fa-solid fa-circle-play"></i>
                                 <h3>Ludovico Einaudi</h3>
-                                
+
                             </div>
 
                         </div>
@@ -218,24 +250,25 @@
                     <i class="fa-solid fa-forward-step"></i>
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>
-                <input class="music" type="range" id="music" name="music" min="0" max="100">
+                <div class="player">
+                    <input class="music" type="range" id="music" name="music" min="0" max="100">
+                </div>
+
             </div>
-
-
-
 
 
 
             <div class="right-bottom ">
                 <div>
-                    <i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-volume-high"></i> <input type="range" id="vol" name="vol" min="0" max="10">
                 </div>
                 <div>
                     <i class="fa-solid fa-desktop"></i>
                 </div>
                 <div>
-                    <i class="fa-solid fa-volume-high"></i> <input type="range" id="vol" name="vol" min="0" max="10">
+                    <i class="fa-solid fa-list"></i>
                 </div>
+
 
 
 
@@ -245,12 +278,12 @@
 
 
 
-    </div>
 
 
 
-    </nav>
-    </footer>
+
+            </nav>
+        </footer>
     </div>
 </body>
 
