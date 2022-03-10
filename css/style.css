@@ -72,6 +72,7 @@ ul li {
   font-size: 17px;
   padding: 5px;
   height: 40px;
+  transition: 0.6s linear;
 }
 .menu ul li p {
   margin-left: 5px;
@@ -90,6 +91,7 @@ ul li {
   line-height: 4ex;
   height: 265px;
   overflow-y: auto;
+  
 }
 .playlist h3 {
   color: white;
@@ -101,13 +103,11 @@ ul li {
   background-color: hsl(0deg 0% 64%);
   color: black;
   margin-right: 10px;
+  transition: 1s linear;
 }
 .fa-plus:hover {
   width: 35px;
   height: 35px;
-}
-.playlist .playlist-hover:hover {
-  border-left: 3px solid green;
 }
 
 
@@ -374,6 +374,8 @@ i:hover {
 ul li:hover {
   color: white;
   cursor: pointer;
+  transition: 1s ease;
+
 }
 
 .nav-top p:hover {
@@ -385,6 +387,7 @@ ul li:hover {
 
 .content-img img:hover{
   opacity: .5;
-  cursor: pointer;
+  
+  transition: 0.5s linear;
   
 } 
